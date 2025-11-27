@@ -2,84 +2,119 @@
 require 'includes/header.php';
 ?>
 
-<h1>Reservas de Salones</h1>
+<div class="container">
 
-<section>
-    <h2>Realizar Reserva</h2>
+    <header class="page-header">
+        <h1>Reservas de Salones</h1>
+        <p>Complete el formulario para realizar una reserva</p>
+    </header>
 
-    <form id="formReserva">
+    <section class="modulo">
+        <h2>Realizar Reserva</h2>
 
-        <label>Cliente:</label>
-        <input type="text" name="cliente" placeholder="Nombre completo">
+        <div class="card">
+            <form id="formReserva" class="form">
 
-        <label>Fecha:</label>
-        <input type="date" name="fecha" id="fecha">
+                <div class="form-group">
+                    <label>Cliente:</label>
+                    <input type="text" name="cliente" placeholder="Nombre completo">
+                </div>
 
-        <label>Hora inicio:</label>
-        <input type="time" name="hora_inicio">
+                <div class="form-group">
+                    <label>Fecha:</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
 
-        <label>Hora fin:</label>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Hora inicio:</label>
+                        <input type="time" name="hora_inicio">
+                    </div>
 
-        <label>Salón:</label>
-        <select name="salon">
-            <option value="">Seleccione un salón</option>
-            <option value="Elegance">Salón Elegance</option>
-            <option value="Fiesta">Salón Fiesta</option>
-            <option value="Business">Salón Business</option>
-            <option value="Terraza">Salón Terraza</option>
-        </select>
+                    <div class="form-group">
+                        <label>Hora fin:</label>
+                        <input type="time" name="hora_fin">
+                    </div>
+                </div>
 
-        <label>Servicios adicionales:</label>
-        <div>
-            <input type="checkbox" name="servicios[]" value="Decoración"> Decoración<br>
-            <input type="checkbox" name="servicios[]" value="Sonido"> Sonido<br>
-            <input type="checkbox" name="servicios[]" value="Catering"> Catering<br>
-            <input type="checkbox" name="servicios[]" value="Fotografía"> Fotografía<br>
+                <div class="form-group">
+                    <label>Salón:</label>
+                    <select name="salon">
+                        <option value="">Seleccione un salón</option>
+                        <option value="Elegance">Salón Elegance</option>
+                        <option value="Fiesta">Salón Fiesta</option>
+                        <option value="Business">Salón Business</option>
+                        <option value="Terraza">Salón Terraza</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Servicios adicionales:</label>
+                    <div class="check-container">
+                        <label><input type="checkbox" name="servicios[]" value="Decoración"> Decoración</label>
+                        <label><input type="checkbox" name="servicios[]" value="Sonido"> Sonido</label>
+                        <label><input type="checkbox" name="servicios[]" value="Catering"> Catering</label>
+                        <label><input type="checkbox" name="servicios[]" value="Fotografía"> Fotografía</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Precio total:</label>
+                    <input type="text" id="precioTotal" readonly value="$0">
+                </div>
+
+                <button type="submit" class="btn">Reservar</button>
+            </form>
         </div>
+    </section>
 
-        <label>Precio total:</label>
-        <input type="text" id="precioTotal" readonly value="$0">
+    <section class="modulo">
+        <h2>Consultar Disponibilidad</h2>
 
-        <br><br>
-        <button type="submit">Reservar</button>
-    </form>
-</section>
+        <div class="card">
+            <form id="formDisponibilidad" class="form">
 
-<section>
-    <h2>Consultar Disponibilidad</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Fecha:</label>
+                        <input type="date" name="fecha_disponibilidad">
+                    </div>
 
-    <form id="formDisponibilidad">
-        <label>Fecha:</label>
-        <input type="date" name="fecha_disponibilidad">
+                    <div class="form-group">
+                        <label>Salón:</label>
+                        <select name="salon_disponibilidad">
+                            <option value="">Seleccione un salón</option>
+                            <option value="Elegance">Salón Elegance</option>
+                            <option value="Fiesta">Salón Fiesta</option>
+                            <option value="Business">Salón Business</option>
+                            <option value="Terraza">Salón Terraza</option>
+                        </select>
+                    </div>
+                </div>
 
-        <label>Salón:</label>
-        <select name="salon_disponibilidad">
-            <option value="">Seleccione un salón</option>
-            <option value="Elegance">Salón Elegance</option>
-            <option value="Fiesta">Salón Fiesta</option>
-            <option value="Business">Salón Business</option>
-            <option value="Terraza">Salón Terraza</option>
-        </select>
+                <button type="submit" class="btn">Consultar</button>
+            </form>
 
-        <button type="submit">Consultar</button>
-    </form>
+            <div id="resultadoDisponibilidad" class="info-box">
+                <p>Aquí se mostrará la disponibilidad.</p>
+            </div>
+        </div>
+    </section>
 
-    <div id="resultadoDisponibilidad">
-    </div>
-</section>
+    <section class="modulo">
+        <h2>Factura de Reserva</h2>
 
-<section>
-    <h2>Factura de Reserva</h2>
+        <div class="card factura">
+            <p><strong>Cliente:</strong> [Nombre]</p>
+            <p><strong>Fecha:</strong> [Fecha]</p>
+            <p><strong>Horario:</strong> [Inicio - Fin]</p>
+            <p><strong>Salón:</strong> [Salón elegido]</p>
+            <p><strong>Servicios:</strong> [Lista]</p>
+            <p><strong>Total:</strong> $0.00</p>
+        </div>
+    </section>
 
-    <div id="factura">
-        <p><strong>Cliente:</strong> [Nombre]</p>
-        <p><strong>Fecha:</strong> [Fecha]</p>
-        <p><strong>Horario:</strong> [Inicio - Fin]</p>
-        <p><strong>Salón:</strong> [Salón elegido]</p>
-        <p><strong>Servicios:</strong> [Lista]</p>
-        <p><strong>Total:</strong> $0.00</p>
-    </div>
-</section>
+</div>
 
 <?php 
 require 'includes/footer.php';
