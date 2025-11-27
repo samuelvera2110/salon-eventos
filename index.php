@@ -37,13 +37,15 @@ require 'includes/header.php';
         line-height: 1.5;
     }
 
-    .imagenDerecha {
+    .imagenSobreNosotros {
         width: 300px;
-        float: right;
+        float: left;
+        padding-right: 10px;
     }
 
     #seccionBeneficios,
-    #salonesContenedor {
+    #salonesContenedor,
+    #seccionOpiniones {
         text-align: center;
         margin: 40px auto;
         width: 80%;
@@ -56,6 +58,10 @@ require 'includes/header.php';
         gap: 5%;
     }
 
+    .items > div, .salones > div{
+        background-color: #f4f4f4;
+    }
+
     .items img {
         width: 60px;
     }
@@ -63,6 +69,30 @@ require 'includes/header.php';
     .salones img {
         width: 250px;
     }
+    
+    .opiniones{
+        width: 60%;
+        margin: 20px auto;
+        display: flex;
+        padding: 10px;
+        border-radius: 5px;
+        gap: 20px;
+        align-items: center;
+        background-color: #f4f4f4;
+    }
+
+    .opiniones img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+    }
+
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
 </style>
 
 <div id="contenedorImagen">
@@ -75,7 +105,7 @@ require 'includes/header.php';
 
 <div id="sobreNosotros">
     <h2>Sobre Nosotros</h2>
-    <img src="img/index/salon-bodas.jpeg" class="imagenDerecha">
+    <img src="img/index/salon-bodas.jpeg" class="imagenSobreNosotros">
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorem iste nam accusamus enim consectetur a doloribus est minima dignissimos ipsa laborum quae iusto optio asperiores tempora, dolores reiciendis amet?</p>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi cumque libero doloribus vero, qui accusantium dolorum sit dolorem illum maiores et? Repellat ipsam exercitationem veritatis ullam tenetur amet ducimus dolorem.</p>
@@ -138,6 +168,43 @@ require 'includes/header.php';
         </div>
     </div>
 </div>
+
+<div id="seccionOpiniones">
+
+    <h2>Opiniones de nuestros clientes</h2>
+
+    <div class="opiniones">
+        <img src="https://img.icons8.com/?size=100&id=ZmPzEQFqF5mx&format=png&color=000000" alt="Imagen cliente">
+        <div class="contenido">
+            <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, fuga suscipit? Consequatur, sapiente dicta, sed maiores dolore iste aut mollitia voluptatem tenetur possimus labore ducimus cum itaque et amet eveniet!"</p>
+            <div class="nombreAutor">
+                <strong>Juan Caicedo</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="opiniones">
+        <img src="https://img.icons8.com/?size=100&id=U4ygcxOqmMse&format=png&color=000000" alt="Imagen cliente">
+        <div class="contenido">
+            <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, fuga suscipit? Consequatur, sapiente dicta, sed maiores dolore iste aut mollitia voluptatem tenetur possimus labore ducimus cum itaque et amet eveniet!"</p>
+            <div class="nombreAutor">
+                <strong>Victoria Valdiviezo</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="opiniones">
+        <img src="https://img.icons8.com/?size=100&id=nxiqdMfruEdM&format=png&color=000000" alt="Imagen cliente">
+        <div class="contenido">
+            <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, fuga suscipit? Consequatur, sapiente dicta, sed maiores dolore iste aut mollitia voluptatem tenetur possimus labore ducimus cum itaque et amet eveniet!"</p>
+            <div class="nombreAutor">
+                <strong>Ramón Acosta</strong>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 
 <?php 
 require 'includes/footer.php';
