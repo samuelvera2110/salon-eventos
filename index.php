@@ -68,7 +68,9 @@ require 'includes/header.php';
 <div id="contenedorImagen">
     <h1><b>Tu evento</b></h1>
     <p><strong>Celebra momentos inolvidables en nuestros salones</strong></p>
+    <a href="reservas.php">
     <button>Reserva ahora</button>
+    </a>
 </div>
 
 <div id="sobreNosotros">
