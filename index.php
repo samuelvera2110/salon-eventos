@@ -30,6 +30,11 @@ require 'includes/header.php';
     #sobreNosotros {
         margin: auto;
         width: 50%;
+        overflow: auto;
+    }
+
+    #sobreNosotros > p{
+        line-height: 1.5;
     }
 
     .imagenDerecha {
@@ -70,8 +75,8 @@ require 'includes/header.php';
     <h2>Sobre Nosotros</h2>
     <img src="img/index/salon-bodas.jpeg" class="imagenDerecha">
 
-    <p>Lorem ipsum...</p>
-    <p>Lorem ipsum...</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorem iste nam accusamus enim consectetur a doloribus est minima dignissimos ipsa laborum quae iusto optio asperiores tempora, dolores reiciendis amet?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi cumque libero doloribus vero, qui accusantium dolorum sit dolorem illum maiores et? Repellat ipsam exercitationem veritatis ullam tenetur amet ducimus dolorem.</p>
 </div>
 
 <div id="seccionBeneficios">
@@ -81,19 +86,19 @@ require 'includes/header.php';
         <div>
             <img src="img/index/reserva.png">
             <h3>Reserva en tiempo real</h3>
-            <p>Realiza tu reserva al instante</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda molestiae corporis omnis, rerum voluptas vero. At accusantium quisquam laudantium minus architecto nihil et, porro minima non consequuntur omnis praesentium perspiciatis?</p>
         </div>
 
         <div>
             <img src="img/index/servicio.png">
             <h3>Servicios</h3>
-            <p>Variedad de opciones</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi hic asperiores, quaerat qui, voluptates rem facilis dolorum enim pariatur similique deserunt obcaecati ut optio. Ducimus cumque beatae hic unde nihil.</p>
         </div>
 
         <div>
             <img src="img/index/darse-la-mano.png">
             <h3>Asesorías</h3>
-            <p>Te ayudamos en todo</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, autem labore consequuntur neque adipisci ipsum ipsam quos? Excepturi dicta modi nihil assumenda, voluptatem molestias quas dolor corrupti, possimus tenetur suscipit.</p>
         </div>
     </div>
 </div>
@@ -105,28 +110,28 @@ require 'includes/header.php';
         <div>
             <img src="img/index/salon-bodas.jpeg">
             <h3>Salón Elegance</h3>
-            <p>Ideal para bodas.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae fuga eveniet in facilis nisi minima blanditiis itaque mollitia? Architecto eum saepe distinctio nobis at laboriosam voluptate sint nostrum odio?</p>
             <a href="">Ver más</a>
         </div>
 
         <div>
             <img src="img/index/salon-fiesta-infantil.jpg">
             <h3>Salón Fiesta</h3>
-            <p>Perfecto para eventos familiares.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In provident eveniet voluptatibus ducimus aut, quae iure nulla modi quo adipisci repudiandae obcaecati rem dolore animi aliquid debitis officia saepe ad?</p>
             <a href="">Ver más</a>
         </div>
 
         <div>
             <img src="img/index/salon-conferencias.jpg">
             <h3>Salón Business</h3>
-            <p>Para reuniones de negocios.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quod incidunt quis laboriosam? Neque, sunt veniam. Quas cum incidunt illum dignissimos? Omnis iste dolore quaerat debitis, ab quos quisquam. Quaerat!</p>
             <a href="">Ver más</a>
         </div>
 
         <div>
             <img src="img/index/salon-terraza.jpeg">
             <h3>Salón Terraza</h3>
-            <p>Al aire libre.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt eius, dolore saepe quia unde dolorum voluptatum veritatis necessitatibus impedit molestias fuga modi enim cupiditate, pariatur ipsa, harum earum. Facilis, est.</p>
             <a href="">Ver más</a>
         </div>
     </div>
