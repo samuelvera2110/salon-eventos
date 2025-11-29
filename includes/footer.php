@@ -1,25 +1,19 @@
-<footer>
+<!-- FOOTER -->
+        <footer>
             <div id="contenedorFooter">
 
                 <div class="informacionContacto">
-
                     <h3>Información de Contacto</h3>
-
                     <div class="contacto-linea">
-                        <img src="https://img.icons8.com/?size=100&id=3723&format=png&color=000000" width="20px"
-                            height="20px" alt="Icono de ubicación">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <img src="img/iconos/ubicacion.png" width="20px" height="20px" alt="Ubicación">
+                        <p>Av. Principal #123, Guayaquil, Ecuador</p>
                     </div>
-
                     <div class="contacto-linea">
-                        <img src="https://img.icons8.com/?size=100&id=9659&format=png&color=000000" width="20px"
-                            height="20px" alt="Icono de teléfono">
+                        <img src="img/iconos/telefono.png" width="20px" height="20px" alt="Teléfono">
                         <p>+(593) 99 999 9999</p>
                     </div>
-
                     <div class="contacto-linea">
-                        <img src="https://img.icons8.com/?size=100&id=12580&format=png&color=000000" width="20px"
-                            height="20px" alt="Icono de email">
+                        <img src="img/iconos/email.png" width="20px" height="20px" alt="Email">
                         <p>salon.eventos@gmail.com</p>
                     </div>
                 </div>
@@ -27,56 +21,44 @@
                 <div class="acercaDe">
                     <h3>Acerca de Nosotros</h3>
                     <ul>
-                        <li>Nuestra infraestructura</li>
-                        <li>Equipo</li>
-                        <li>Trabaja con nosotros</li>
-                        <li>Políticas de privacidad</li>
-                        <li>Términos y condiciones</li>
+                        <li><a href="#">Nuestra infraestructura</a></li>
+                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
                     </ul>
-
                 </div>
 
                 <div class="formularioFooter">
-
-                    <h3>Suscribete para más novedades</h3>
-
-                    <form class="form">
-
+                    <h3>Suscríbete para más novedades</h3>
+                    <form class="form" method="POST" action="suscripcion.php">
                         <div class="campo">
-                            <input type="email" placeholder="Ingresa tu correo electrónico">
+                            <input type="email" name="email" placeholder="Ingresa tu correo electrónico" required>
                             <button type="submit">Suscribirse</button>
                         </div>
-
                         <div class="campo">
-                            <input type="checkbox" id="terminos" name="terminos">
+                            <input type="checkbox" id="terminos" name="terminos" required>
                             <label for="terminos">Acepto los términos y condiciones</label>
                         </div>
-
                         <div class="campo">
-                            <input type="checkbox" id="privacidad" name="privacidad">
+                            <input type="checkbox" id="privacidad" name="privacidad" required>
                             <label for="privacidad">He leído la política de privacidad</label>
                         </div>
-
                     </form>
-
                 </div>
 
             </div>
 
             <div class="redes">
-                <p>Siguenos en nuestras redes: </p>
-
-                <a href="https://www.facebook.com">
-                    <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000"
-                        alt="Icono de Facebook" width="45px" height="45px">
+                <p>Síguenos en nuestras redes:</p>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="img/iconos/facebook.png" alt="Facebook" width="45px" height="45px">
                 </a>
-                <a href="https://www.instagram.com">
-                    <img src="https://img.icons8.com/?size=100&id=ZRiAFreol5mE&format=png&color=000000"
-                        alt="Icono de Instagram" width="45px" height="45px">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="img/iconos/instagram.png" alt="Instagram" width="45px" height="45px">
                 </a>
-                <a href="https://www.x.com">
-                    <img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="Icono de X"
-                        width="45px" height="45px">
+                <a href="https://www.x.com" target="_blank">
+                    <img src="img/iconos/twitter.png" alt="X" width="45px" height="45px">
                 </a>
             </div>
 
@@ -85,5 +67,4 @@
     </div>
 
 </body>
-
 </html>

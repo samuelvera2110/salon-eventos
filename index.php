@@ -2,91 +2,154 @@
     require 'includes/header.php';
 ?>
 
+        <!-- BANNER PRINCIPAL -->
         <div id="contenedorImagen">
-            <h1><b>Tu evento</b></h1>
-            <p><strong>Celebra momentos inolvidables en nuestros salones</strong></p>
-            <button>Reserva ahora</button>
+            <h1><b>Nuestros Servicios</b></h1>
+            <p><strong>Hacemos tu evento inolvidable</strong></p>
         </div>
 
-        <div id="sobreNosotros">
-            <h2>Sobre Nosotros</h2>
-
-            <img src="img/index/salon-bodas.jpeg" class="imagenDerecha">
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia sapiente omnis totam quo
-                officiis eius cumque ullam sequi quasi, fugit, aperiam ipsam suscipit neque optio maiores hic dicta aut.
-            </p>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magnam fuga aliquam, ipsam voluptatum
-                beatae laborum illum earum, libero quo minus provident quae illo id vero cumque eveniet labore pariatur!
+        <!-- INTRODUCCIÓN -->
+        <div class="introduccionServicios">
+            <h2>Servicios Completos para tu Evento</h2>
+            <p>
+                En nuestro salón de eventos ofrecemos una amplia gama de servicios para garantizar que tu celebración 
+                sea perfecta en cada detalle. Desde catering gourmet hasta decoración personalizada, nuestro equipo 
+                profesional se encarga de todo para que tú solo disfrutes de tu evento especial.
             </p>
         </div>
 
-        <div id="end"></div>
+        <!-- GRID DE SERVICIOS -->
+        <div class="contenedorServicios">
+            <h2>¿Qué Ofrecemos?</h2>
+            <div class="gridServicios">
 
-        <div id="seccionBeneficios">
-            <h2>¿Por qué elegirnos para tu próximo evento?</h2>
-
-            <div class="items">
-
-                <div>
-                    <img src="img/index/reserva.png">
-                    <h3>Reserva en tiempo real</h3>
-                    <p>Realiza tu reserva al instante, sin esperas ni llamadas</p>
+                <div class="servicioCard">
+                    <img src="img/servicios/catering.png" alt="Catering">
+                    <h3>Catering y Banquetes</h3>
+                    <p>Menús personalizados con opciones gourmet y buffet preparados por chefs profesionales.</p>
+                    <ul>
+                        <li>Menús personalizados</li>
+                        <li>Servicio de meseros</li>
+                        <li>Barra libre opcional</li>
+                        <li>Opciones vegetarianas y veganas</li>
+                    </ul>
                 </div>
 
-                <div>
-                    <img src="img/index/servicio.png">
-                    <h3>Servicios</h3>
-                    <p>Ofrecemos una variedad de servicios para hacer tu evento especial</p>
+                <div class="servicioCard">
+                    <img src="img/servicios/fotografia.png" alt="Fotografía">
+                    <h3>Fotografía y Video</h3>
+                    <p>Capturamos cada momento especial con equipos profesionales de alta calidad.</p>
+                    <ul>
+                        <li>Fotógrafo profesional</li>
+                        <li>Video HD del evento</li>
+                        <li>Drone para tomas aéreas</li>
+                        <li>Álbum digital incluido</li>
+                    </ul>
                 </div>
 
-                <div>
-                    <img src="img/index/darse-la-mano.png">
-                    <h3>Asesorías personalizadas</h3>
-                    <p>Nuestro equipo brinda soporte para garantizar cada detalle de tu evento</p>
+                <div class="servicioCard">
+                    <img src="img/servicios/decoracion.png" alt="Decoración">
+                    <h3>Decoración Temática</h3>
+                    <p>Diseños únicos adaptados al estilo y temática de tu evento especial.</p>
+                    <ul>
+                        <li>Decoración personalizada</li>
+                        <li>Centros de mesa</li>
+                        <li>Iluminación ambiental</li>
+                        <li>Arreglos florales</li>
+                    </ul>
+                </div>
+
+                <div class="servicioCard">
+                    <img src="img/servicios/musica.png" alt="Música">
+                    <h3>Música y DJ</h3>
+                    <p>Entretenimiento musical con DJ profesional y equipos de sonido de última generación.</p>
+                    <ul>
+                        <li>DJ profesional</li>
+                        <li>Sistema de audio premium</li>
+                        <li>Pista de baile iluminada</li>
+                        <li>Lista de reproducción personalizada</li>
+                    </ul>
+                </div>
+
+                <div class="servicioCard">
+                    <img src="img/servicios/animacion.png" alt="Animación">
+                    <h3>Animación y Shows</h3>
+                    <p>Animadores, magos, payasos y shows especiales para eventos infantiles y familiares.</p>
+                    <ul>
+                        <li>Animadores profesionales</li>
+                        <li>Shows de magia</li>
+                        <li>Juegos infantiles</li>
+                        <li>Personajes temáticos</li>
+                    </ul>
+                </div>
+
+                <div class="servicioCard">
+                    <img src="img/servicios/pasteleria.png" alt="Pastelería">
+                    <h3>Pastelería Fina</h3>
+                    <p>Pasteles y postres artesanales diseñados especialmente para tu celebración.</p>
+                    <ul>
+                        <li>Pasteles personalizados</li>
+                        <li>Mesa de dulces</li>
+                        <li>Cupcakes y postres</li>
+                        <li>Diseños únicos</li>
+                    </ul>
                 </div>
 
             </div>
-
         </div>
 
-        <div id="salonesContenedor">
+        <!-- SECCIÓN PAQUETES -->
+        <div class="seccionPaquetes">
+            <h2>Paquetes Especiales</h2>
+            <div class="paquetes">
 
-            <h2>Nuestros salones destacados</h2>
-
-            <div class="salones">
-
-                <div>
-                    <img src="img/index/salon-bodas.jpeg">
-                    <h3>Salón Elegance</h3>
-                    <p>Espacio ideal para bodas y eventos corporativos.</p>
-                    <a href="">Ver más</a>
+                <div class="paquete">
+                    <h3>Paquete Básico</h3>
+                    <div class="precio">$500</div>
+                    <ul>
+                        <li>✓ Salón 4 horas</li>
+                        <li>✓ Catering básico</li>
+                        <li>✓ Decoración simple</li>
+                        <li>✓ Meseros</li>
+                    </ul>
+                    <button>Reservar</button>
                 </div>
 
-                <div>
-                    <img src="img/index/salon-fiesta-infantil.jpg">
-                    <h3>Salón Fiesta</h3>
-                    <p>Perfecto para celebraciones familiares y fiestas privadas.</p>
-                    <a href="">Ver más</a>
+                <div class="paquete">
+                    <h3>Paquete Premium</h3>
+                    <div class="precio">$1,200</div>
+                    <ul>
+                        <li>✓ Salón 6 horas</li>
+                        <li>✓ Catering gourmet</li>
+                        <li>✓ Decoración completa</li>
+                        <li>✓ DJ y música</li>
+                        <li>✓ Fotografía básica</li>
+                    </ul>
+                    <button>Reservar</button>
                 </div>
 
-                <div>
-                    <img src="img/index/salon-conferencias.jpg">
-                    <h3>Salón Business</h3>
-                    <p>Espacio moderno para conferencias y reuniones de negocios.</p>
-                    <a href="">Ver más</a>
-                </div>
-
-                <div>
-                    <img src="img/index/salon-terraza.jpeg">
-                    <h3>Salón Terraza</h3>
-                    <p>Espacio al aire libre, ideal para cocteles y recepciones.</p>
-                    <a href="">Ver más</a>
+                <div class="paquete">
+                    <h3>Paquete VIP</h3>
+                    <div class="precio">$2,500</div>
+                    <ul>
+                        <li>✓ Salón día completo</li>
+                        <li>✓ Todo incluido</li>
+                        <li>✓ Barra libre premium</li>
+                        <li>✓ Foto y video profesional</li>
+                        <li>✓ Show en vivo</li>
+                        <li>✓ Coordinador de eventos</li>
+                    </ul>
+                    <button>Reservar</button>
                 </div>
 
             </div>
+        </div>
 
+        <!-- LLAMADA A LA ACCIÓN -->
+        <div class="ctaServicios">
+            <h2>¿Listo para planear tu evento?</h2>
+            <p>Contáctanos hoy y recibe una cotización personalizada sin compromiso</p>
+            <button>Solicitar Cotización</button>
         </div>
 
 <?php
