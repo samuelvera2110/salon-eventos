@@ -24,7 +24,7 @@
             width: 100%;
         }
 
-        /* HEADER SIMPLE */
+        
         #contenedorHeader {
             display: flex;
             justify-content: space-between;
@@ -75,7 +75,7 @@
             transform: translateY(-2px);
         }
 
-        /* BANNER */
+        
         #contenedorImagen {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                         url('img/index/salon.jpg') center/cover;
@@ -97,7 +97,7 @@
             font-size: 1.3rem;
         }
 
-        /* SECCIONES */
+       
         .introduccionServicios {
             padding: 60px 20px;
             text-align: center;
@@ -117,7 +117,7 @@
             line-height: 1.8;
         }
 
-        /* SERVICIOS */
+       
         .contenedorServicios {
             padding: 60px 20px;
             max-width: 1200px;

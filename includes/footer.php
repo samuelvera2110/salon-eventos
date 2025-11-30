@@ -5,15 +5,15 @@
                 <div class="informacionContacto">
                     <h3>Información de Contacto</h3>
                     <div class="contacto-linea">
-                        <img src="img/iconos/ubicacion.png" width="20px" height="20px" alt="Ubicación">
+                        <img src="img/index/ubicacion.png" width="20px" height="20px" alt="Ubicación">
                         <p>Av. Principal #123, Guayaquil, Ecuador</p>
                     </div>
                     <div class="contacto-linea">
-                        <img src="img/iconos/telefono.png" width="20px" height="20px" alt="Teléfono">
+                        <img src="img/index/telefono.png" width="20px" height="20px" alt="Teléfono">
                         <p>+(593) 99 999 9999</p>
                     </div>
                     <div class="contacto-linea">
-                        <img src="img/iconos/email.png" width="20px" height="20px" alt="Email">
+                        <img src="img/index/email.png" width="20px" height="20px" alt="Email">
                         <p>salon.eventos@gmail.com</p>
                     </div>
                 </div>
