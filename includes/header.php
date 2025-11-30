@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Samuel Vera">
+    <meta name="author" content="Jeremy Guncay">
     <title>Salón de Eventos</title>
     
     <style>
@@ -283,6 +283,83 @@
             background: #4c63d2;
         }
 
+        /* ===== ESTILOS DEL FOOTER ===== */
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        #contenedorFooter {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 30px;
+            align-items: start;
+            align-self: self-start;
+        }
+
+        .redes {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .redes a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .informacionContacto {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .informacionContacto .contacto-linea {
+            display: flex;
+            align-items: center;
+        }
+
+        .informacionContacto img {
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .informacionContacto p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .acercaDe ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .acercaDe li {
+            margin: 5px 0;
+        }
+
+        .formularioFooter {
+            text-align: left;
+            margin-top: 0;
+        }
+
+        .formularioFooter .campo {
+            margin: 10px 0;
+        }
+
+        .formularioFooter input[type="email"] {
+            padding: 8px;
+            width: 180px;
+            margin-right: 10px;
+        }
+
+        .formularioFooter button {
+            padding: 8px 16px;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             #contenedorHeader {
@@ -294,6 +371,10 @@
             #navegacion nav {
                 flex-direction: column;
                 gap: 10px;
+            }
+
+            #contenedorFooter {
+                grid-template-columns: 1fr;
             }
         }
     </style>

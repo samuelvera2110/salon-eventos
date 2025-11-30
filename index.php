@@ -24,7 +24,7 @@
             <div class="gridServicios">
 
                 <div class="servicioCard">
-                    <img src="img/servicios/catering.png" alt="Catering">
+                    <img src="img/index/Catering.png" alt="Catering">
                     <h3>Catering y Banquetes</h3>
                     <p>Menús personalizados con opciones gourmet y buffet preparados por chefs profesionales.</p>
                     <ul>
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="servicioCard">
-                    <img src="img/servicios/fotografia.png" alt="Fotografía">
+                    <img src="img/index/Fotografia.png" alt="Fotografía">
                     <h3>Fotografía y Video</h3>
                     <p>Capturamos cada momento especial con equipos profesionales de alta calidad.</p>
                     <ul>
@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="servicioCard">
-                    <img src="img/servicios/decoracion.png" alt="Decoración">
+                    <img src="img/index/Decoracion.png" alt="Decoración">
                     <h3>Decoración Temática</h3>
                     <p>Diseños únicos adaptados al estilo y temática de tu evento especial.</p>
                     <ul>
@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="servicioCard">
-                    <img src="img/servicios/musica.png" alt="Música">
+                    <img src="img/index/Dj.png" alt="Música">
                     <h3>Música y DJ</h3>
                     <p>Entretenimiento musical con DJ profesional y equipos de sonido de última generación.</p>
                     <ul>
@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="servicioCard">
-                    <img src="img/servicios/animacion.png" alt="Animación">
+                    <img src="img/index/Show.png" alt="Animación">
                     <h3>Animación y Shows</h3>
                     <p>Animadores, magos, payasos y shows especiales para eventos infantiles y familiares.</p>
                     <ul>
@@ -84,7 +84,7 @@
                 </div>
 
                 <div class="servicioCard">
-                    <img src="img/servicios/pasteleria.png" alt="Pastelería">
+                    <img src="img/index/Pasteleria.avif" alt="Pastelería">
                     <h3>Pastelería Fina</h3>
                     <p>Pasteles y postres artesanales diseñados especialmente para tu celebración.</p>
                     <ul>
