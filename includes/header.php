@@ -6,6 +6,7 @@
     <meta name="author" content="Samuel Vera">
     <title>Eventix</title>
     <link rel="stylesheet" href="css/estilos.css"/>
+
 </head>
 <body>
     <header>
