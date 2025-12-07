@@ -24,7 +24,7 @@
         font-size: 35px;
     }
 
-    /* Estilos de los Botones de Control (NUEVO DOM) */
+    /* Estilos de los Botones de Control*/
     .controles-dom {
         text-align: center;
         margin-bottom: 30px;
@@ -74,7 +74,7 @@
     }
 
     .respuesta {
-        display: none; /* Oculto por defecto */
+        display: none;
         background-color: #fff;
         padding: 25px;
         margin-top: 5px;
@@ -142,7 +142,7 @@
                 <span class="simbolo">+</span>
             </div>
             <div class="respuesta">
-                Es recomendable. Crea tu cuenta haciendo clic en <a href="registro.php" style="color:#F27830;">"Regístrate"</a> en el menú.
+                Crea tu cuenta haciendo clic en <a href="registro.php" style="color:#F27830;">"Regístrate"</a> en el menú.
             </div>
         </div>
 
@@ -190,7 +190,7 @@
 </main>
 
 <script>
-    // FUNCIÓN 1: Interactividad Individual (Click en una pregunta)
+    // FUNCIÓN 1: Interactividad Individual
     function abrirCerrar(elemento) {
         var respuesta = elemento.nextElementSibling;
         var icono = elemento.querySelector('.simbolo');
@@ -206,7 +206,7 @@
         }
     }
 
-    // FUNCIÓN 2: Manipulación del DOM Masiva (Cumple requisito del PDF)
+    // FUNCIÓN 2: Manipulación del DOM Masiva
     function controlarTodas(accion) {
         // Obtenemos todas las respuestas y todos los simbolos
         var todasLasRespuestas = document.querySelectorAll('.respuesta');
