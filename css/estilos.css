@@ -1,0 +1,190 @@
+:root{
+  --accent: #2b7a78;
+  --accent-dark: #236b66;
+  --muted: #666;
+  --bg: #f4f6f8;
+}
+
+*{ box-sizing: border-box; }
+body{
+  margin:0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color:#222;
+}
+
+/* Topbar / menu */
+.topbar{ width:100%; }
+.topbar-inner{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:10px 24px;
+  background: rgba(255,255,255,0.95);
+  border-bottom:1px solid #eee;
+  position:sticky; top:0; z-index:20;
+}
+.brand a{ font-weight:700; color:var(--accent-dark); text-decoration:none; font-size:18px; }
+.menu{ list-style:none; margin:0; padding:0; display:flex; gap:8px; align-items:center; }
+.menu li{ }
+.menu a{
+  display:inline-block; padding:8px 12px; text-decoration:none; color:#333; border-radius:6px;
+  border:1px solid transparent;
+}
+.menu a.active, .menu a:hover{
+  background: var(--accent); color:#fff; border-color: rgba(0,0,0,0.04);
+}
+
+/* HERO */
+.hero{
+  height:240px;
+  background-image: url('https://www.hotelesoroverde.com/wp-content/uploads/ov-portoviejo-01.jpg');
+  background-size:cover;
+  background-position:center;
+  display:flex; align-items:center; justify-content:center;
+  color:#fff; text-align:center;
+  padding:20px;
+}
+.hero .hero-text h1{ margin:0; font-size:34px; text-shadow:0 3px 10px rgba(0,0,0,0.4); }
+.hero .subtitle{ margin-top:6px; opacity:0.95; }
+
+/* Contenedor principal */
+.contenedor{
+  max-width:1000px;
+  margin: -60px auto 40px; /* overlap hero */
+  padding:20px;
+}
+
+/* Card */
+.card{
+  background:#fff;
+  padding:18px;
+  margin-bottom:18px;
+  border-radius:10px;
+  box-shadow: 0 6px 18px rgba(20,20,20,0.06);
+}
+
+/* Form */
+.form-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:12px; align-items:start; }
+.form-grid label{ display:block; font-weight:600; color:var(--muted); margin-bottom:6px; }
+.form-grid input[type="text"], .form-grid input[type="date"], .form-grid input[type="time"], .form-grid select, .form-grid input[type="number"]{
+  width:100%; padding:10px; border-radius:6px; border:1px solid #ddd;
+}
+.form-actions{ grid-column:1 / -1; display:flex; gap:10px; align-items:center; }
+
+/* Buttons */
+.btn{ display:inline-block; padding:10px 14px; border-radius:8px; text-decoration:none; color:#fff; background:var(--accent); border:none; cursor:pointer; }
+.btn.muted{ background:#9aa3a3; color:#fff; text-decoration:none; display:inline-block; padding:10px 14px; border-radius:8px; }
+.btn.primary{ background:var(--accent); }
+.btn:hover{ opacity:0.95; transform:translateY(-1px); transition:all .15s ease; }
+
+/* Table */
+.table-wrap{ overflow:auto; }
+table{ width:100%; border-collapse:collapse; font-size:14px; }
+thead th{ background:#f7fafb; padding:12px; text-align:left; color:#333; }
+tbody td{ border-top:1px solid #eee; padding:10px; }
+
+/* Notice and errors */
+.notice{ padding:12px; background:#e9f7ef; border:1px solid #d0f0dc; color:#1b7a3a; border-radius:8px; margin-bottom:12px; }
+.error{ padding:8px; background:#fff3f3; border:1px solid #ffd6d6; color:#bb1c1c; border-radius:6px; }
+
+/* Footer (user's footer styles added) */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+#contenedorFooter {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.redes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.informacionContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.informacionContacto .contacto-linea {
+    display: flex;
+    align-items: center;
+}
+
+.informacionContacto img {
+    margin-right: 10px;
+}
+
+.acercaDe ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.formularioFooter .campo {
+    margin: 10px 0;
+}
+
+/* Responsive */
+@media (max-width:700px){
+  .hero .hero-text h1{ font-size:26px; }
+  .contenedor{ margin-top: -40px; padding:12px; }
+  #contenedorFooter{ width:95%; grid-template-columns:1fr; gap:12px; }
+  .contenedor-footer{ flex-direction:column; text-align:center; gap:6px; }
+}
+/* element selector */
+label { font-size: 0.95rem; }
+
+/* class selector (descriptivo) */
+.form-control { padding:8px; border-radius:6px; border:1px solid #ddd; }
+
+/* id selector */
+#event-form { background: transparent; }
+
+/* descendant selector */
+.card .form-grid input { font-size: 0.95rem; }
+
+/* child selector */
+.form-grid > .full-width { margin-top:6px; }
+
+/* attribute selector */
+input[type="date"] { padding:10px; }
+
+/* group selector */
+h2, .page-title, .card h2 { color: #1b3744; }
+
+/* adjacent sibling */
+label + input { margin-top:6px; }
+
+/* general sibling */
+input[type="checkbox"] ~ label { margin-left:6px; }
+
+/* pseudo-class */
+input:focus { border-color: #c28d2c; }
+
+/* nth-child */
+.form-grid .checkbox-group label:nth-child(2) { font-weight:600; }
+
+/* pseudo-element */
+.input-text::placeholder { opacity:0.7; }
+
+/* universal selector */
+* { -webkit-font-smoothing:antialiased; }
+
+/* attribute contains */
+a[href^="http"] { text-decoration:none; }
+
+/* last-child and first-child */
+.form-actions .btn:first-child { box-shadow: none; }
+.checkbox-group label:last-child { font-style:italic; }
