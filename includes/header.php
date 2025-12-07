@@ -21,6 +21,8 @@
                     <a href="">Sobre Nosotros</a>
                     <a href="">Contáctenos</a>
                     <a href="">Reservaciones</a>
+                    <a href=""FAQ></a>
+                    
                 </nav>
             </div>
             <div class="botones">
